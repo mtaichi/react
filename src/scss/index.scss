@@ -1,0 +1,73 @@
+$color1: gray;
+$color2:black;
+$bigPadding:2rem;
+$primdColor:orange;
+
+bla
+
+/*initial*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+/*globle*/
+body {}
+
+.clearfix::after {
+    content: " ";
+    clear: both;
+
+
+}
+
+//end of globle
+
+/*header*/
+header {
+    min-height: 100vh;
+    background: url(../img/bg.jpeg)center/cover no-repeat;
+
+
+}
+
+
+.info {
+    display: table;
+    width: 100%;
+
+    padding: 1rem;
+    line-height: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    &-social-icons {
+        float: left;
+
+        //        display: table-cell;
+        //        vertical-align: middle;
+        & a {
+
+            display: inline-block;
+
+            padding-right: 0.5rem;
+            color: white;
+
+            &:hover {
+                color: $primColor;
+
+            }
+        }
+    }
+
+    &-address {
+        float: right;
+
+    }
+}
+
+@import "banner.scss"
+
+/*end of header*/

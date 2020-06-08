@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --primaryColor: rgb(255, 124, 10);
+    --primaryLight: #FFFFFC;
+    --primaryGray: rgb(190, 183, 164);
+    --darkRed: #601E06;
+    --black: #000;
+    --ctnBg: #FF7C0A;
+    --light: #D9D28D;
+}
+
+/*initial*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+a,button{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover,button:hover{
+    filter: brightness(200%);
+}
+
+/*globle*/
+.clearfix::after {
+    content: " ";
+    clear: both;
+}
+
+
+html {
+    font-size: calc(12px + 0.8vw);
+}
+
+body {
+    
+    font-family: 'Pacifico', cursive;
+}
+
+.section-title{
+text-align: center;
+text-transform: uppercase;
+color: var(--primaryColor);}
+.title {
+    font-size: 3rem;
+    color: var(--primaryLight);
+}
+
+/*header section*/
+
+header {
+    min-height: 100vh;
+    background: url(../img/bg.jpeg) center/cover no-repeat;
+}
+
+.info {
+    display: table;
+    width: 100%;
+    padding: 1rem;
+    line-height: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.info-social-icons {
+    float: left;
+}
+
+.info-social-icons a {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.info-social-icons a:hover {
+    color: orange;
+}
+
+.info-address {
+    float: right;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: table;
+}
+
+/*banner*/
+.banner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+
+}
+*:hover{
+    filter: brightness(-360%);
+}
+.banner-title {
+    color: var(--primaryColor);
+    font-size: 3rem;
+    text-transform: capitalize;
+    
+
+}
+
+.banner-button{
+    padding: 0.5em 1em;
+    margin-top: 1rem;
+    font-size: 1rem; text-transform: capitalize;
+    background: rgba(255,255,255,0.5);
+    border:0.2rem solid rgba(0,0,0,0.5);
+    border-radius: 1em;
+    cursor: pointer;
+    
+   
+    
+}
+/*
+.banner-button:hover,.banner-button:focus{
+    color: red;
+     background: rgba(255,255,255,0.5);
+}
+*/
+
+
+
+
+/*end of banner*/
+
+
+/*gallery*/
+.gallery{
+    background: var(--primaryGray);
+    padding: 2rem;
+}
+
+.gallery-item{ 
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem auto;
+    
+}
+.item-img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.item-link{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: var(--primaryGray);
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border: 0.25rem solid var(--primaryGray);
+    padding: 0 1rem;
+    
+  
+}
+/*end of gallery*/
+
+/*# sourceMappingURL=index.css.map */
